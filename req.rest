@@ -1,0 +1,27 @@
+### Rute untuk mendapatkan semua produk
+GET http://localhost:2526/produk
+
+### Rute untuk mendapatkan produk berdasarkan ID
+GET http://localhost:2526/produk/4
+
+### Rute untuk menambahkan produk baru
+POST  http://localhost:2526/produk
+Content-Type: application/json
+
+{
+    "nama":"1 Set PC Server 2",
+    "kategori":"Elektronik",
+    "harga":"1500000.00",
+    "stok":20
+}
+
+### Rute untuk mengupdate produk bedasrkan ID
+PUT  http://localhost:2526/produk/3
+Content-Type: application/json
+
+{
+    "nama": " 1 Set PC Server Dell"
+}
+
+### Rute untuk menghapus produk berdasrkan ID
+DELETE  http://localhost:2526/produk/4
